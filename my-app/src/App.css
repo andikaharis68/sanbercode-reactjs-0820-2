@@ -1,0 +1,29 @@
+.formPembelian {
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  height: 100%;
+  padding: 0 21px 21px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.daftarItem {
+  padding: 8px 0;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.input {
+  padding: 8px 32px;
+}
+
+#submitButton {
+  background-color: white;
+  border-radius: 16px;
+}
