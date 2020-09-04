@@ -27,3 +27,35 @@
   background-color: white;
   border-radius: 16px;
 }
+
+h1 {
+  text-align: center;
+}
+
+.tabelBuah {
+  margin: auto;
+  margin-top: 5px;
+  width: 540px;
+  border: 2px solid black;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.tabelBuah th {
+  background-color: #d1d1d1;
+  border: 1px solid black;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.tabelBuah td {
+  background-color: orangered;
+  border: 1px solid black;
+  text-align:left;
+}
+
+.tabelBuah table {
+  border: 1px solid black;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
