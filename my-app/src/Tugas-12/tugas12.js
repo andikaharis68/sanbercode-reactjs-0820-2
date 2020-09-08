@@ -109,8 +109,11 @@ class FormBuah extends Component {
                                         <td>{el.nama}</td>
                                         <td>{el.harga}</td>
                                         <td>{el.berat / 1000} kg</td>
-                                        <td>
-                                            <button value={index} onClick={this.editForm}>
+                                        <td className="text-center">
+                                            <button value={index}
+                                                onClick={this.editForm}
+                                                style={{ marginRight: "20px" }}
+                                            >
                                                 Edit
                                             </button>
                                             <button value={index} onClick={this.deleteBuah}>
@@ -127,8 +130,8 @@ class FormBuah extends Component {
                     <br></br>
                     <div>
                         <form onSubmit={this.submitForm}>
-                            <table style={{ border: "1px solid", width: "40%", margin: "0 auto" }}>
-                                <tbody style={{ background: "coral" }}>
+                            <table style={{ border: "1px solid", width: "40%", margin: "auto" }}>
+                                <tbody style={{ background: "#aaa" }}>
                                     <tr>
                                         <td>
                                             <strong>Nama</strong>
