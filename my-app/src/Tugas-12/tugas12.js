@@ -22,7 +22,7 @@ class FormBuah extends Component {
     submitForm = (event) => {
         event.preventDefault(); //agar tidak default sendiri
         var index = this.state.index;
-        var inputAll = {    //mengambil nilai dari form input (nama,harga,berat)
+        var inputAll = {    //mengambil nilai dari state (nama,harga,berat)
             nama: this.state.inputNama,
             harga: this.state.inputHarga,
             berat: this.state.inputBerat,
@@ -51,7 +51,7 @@ class FormBuah extends Component {
     //----------------------- saat mengisi form nama, harga,  dan berat  -------------------
     changeInputName = (event) => {
         var value = event.target.value;  //mengambil nilai dari <input>
-        this.setState({ inputNama: value }); //memasukan nilainya ke variable
+        this.setState({ inputNama: value }); //memasukan nilainya ke variable di state
     };
     changeInputHarga = (event) => {
         var value = event.target.value;
