@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
-// import Tugas9 from './Tugas-9/tugas9';
-// import Tugas10 from './Tugas-10/tugas10';
-// import Tugas11 from './Tugas-11/tugas11';
-// import Tugas12 from './Tugas-12/tugas12';
-import Tugas13 from './Tugas-13/tugas13';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        {/* <Tugas9 /> */}
-        {/* <Tugas10 /> */}
-        {/* <Tugas11 /> */}
-        {/* <Tugas12 /> */}
-        <Tugas13 />
-      </div>
-    );
-  }
+import React from "react";
+import "./App.css";
+// import Clock from "./Tugas-11/clock.jsx";
+// import FormBuah from "./Tugas-12/formeditbuah.jsx";
+// import DaftarBuah from "./Tugas-13/DaftarBuah.jsx";
+import BuahIndex from "./Tugas-14/BuahIndex.jsx";
+
+// Create react app based on Quiz
+// Use the same inline styling, because just need to change inside app.js
+
+function App() {
+  return (
+    <div>
+      {/* <DaftarBuah /> */}
+      <BuahIndex />
+    </div>
+  );
 }
 
 export default App;
