@@ -1,21 +1,23 @@
 
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./Tugas-15/components/navbar";
+import Routes from "./Tugas-15/components/routes";
+import ThemeContextProvider from "./Tugas-15/contexts/theme";
 import "./App.css";
-// import Clock from "./Tugas-11/clock.jsx";
-// import FormBuah from "./Tugas-12/formeditbuah.jsx";
-// import DaftarBuah from "./Tugas-13/DaftarBuah.jsx";
-import BuahIndex from "./Tugas-14/BuahIndex.jsx";
 
-// Create react app based on Quiz
-// Use the same inline styling, because just need to change inside app.js
-
-function App() {
-  return (
-    <div>
-      {/* <DaftarBuah /> */}
-      <BuahIndex />
-    </div>
-  );
-}
+const App = () => (
+  <ThemeContextProvider>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <br />
+        <br />
+        <br />
+        <Routes />
+      </div>
+    </BrowserRouter>
+  </ThemeContextProvider>
+);
 
 export default App;

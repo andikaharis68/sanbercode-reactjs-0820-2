@@ -72,17 +72,20 @@ export default function Tugas13() {
                 .catch((err) => console.log(err));
         }
     }
+
+    //-----------------------  ketika tombol edit ditekan  ------------------
     const handleEdit = (event) => {
-        setName(dataHargaBuah[event.target.id].name);
-        setPrice(dataHargaBuah[event.target.id].price);
-        setWeight(dataHargaBuah[event.target.id].weight);
-        setSelectedID(parseInt(event.target.value));
-        setIndex(event.target.id)
+        setName(dataHargaBuah[event.target.id].name); //menset nama sesuai dengan id 
+        setPrice(dataHargaBuah[event.target.id].price); //menset harga sesuai dengan id
+        setWeight(dataHargaBuah[event.target.id].weight); //menset berat sesuai dengan id
+        setSelectedID(parseInt(event.target.value)); //menset SelectedID sesuai dengan id
+        setIndex(event.target.id) //menset index sesuai dengan id
         setIsEdit(true);
     }
 
+    //-----------------------  ketika tombol delete ditekan  ------------------
     const handleHapus = (event) => {
-        let idBuah = parseInt(event.target.value);
+        let idBuah = parseInt(event.target.value); //menerima id dari button
         let dataBaru = dataHargaBuah.filter(({ id }) => id !== idBuah, 1);
         axios.delete(`http://backendexample.sanbercloud.com/api/fruits/${idBuah}`)
             .then(res => {

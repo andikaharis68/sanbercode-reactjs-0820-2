@@ -59,3 +59,35 @@ h1 {
   margin: 0 auto 0 auto;
   text-align: center;
 }
+
+/*-------------------- NAVBAR --------------------*/
+
+.navbar{
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 65px;
+  position: fixed;
+}
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navbar ul li{
+  float: left;
+}
+.navbar ul li a{
+  margin-top: 15px;
+  margin-right: 52px;
+  margin-left: 52px;
+  display: block;
+  color: rgb(251, 255, 0); 
+  text-align: center;
+  padding: 4px 8px ;
+  text-decoration: none;
+  border: 3px solid rgb(134, 93, 17);
+  border-radius: 15%;
+}
+/*---------------------------------------------------*/
